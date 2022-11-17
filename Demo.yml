@@ -1,0 +1,28 @@
+﻿# yaml-language-server: $schema=https://aka.ms/winget-manifest.singleton.1.0.0.schema.json
+PackageIdentifier: Nxs.Demo
+Publisher: Nxs
+PackageName: DemoPckg
+PackageVersion: 1.0.0.0
+License: 2022 © Nxs. All rights reserved.
+InstallerType: exe
+Tags:
+- Outil de développement
+- Development Tools 
+- ICON=https://github.com/jpbras-github/NxS/blob/main/test_test.ico
+- DETECTION="%SystemDrive%\temp\test.txt"
+- UNINSTALLCOMMAND="%ProgramFiles%\Foxit Software\Foxit Reader\unins000.exe" /silent
+- BPC=DEMOPCKG1000ACE
+- NXS=NXS_DEMOPCKG_1.0.0.0 
+ShortDescription: NxS Demo Package
+PackageUrl: https://www.NxSDemo.com/NotReal/
+Installers:
+- Architecture: x86
+  InstallerUrl: https://github.com/jpbras-github/NxS/blob/main/mysetup.exe
+  InstallerSha256: DE0F14778405C54D3258CDF751C28A9AFD1189861F587A24C30445969ADD4123
+  InstallerSwitches:
+    Silent: /VERYSILENT /NORESTART /SUPRESSMSGBOXES"
+    SilentWithProgress: /SILENT"
+PackageLocale: en-US
+ManifestType: singleton
+ManifestVersion: 1.0.0
+MinimumOSVersion: 10.0.18362.0
